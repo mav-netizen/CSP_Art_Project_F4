@@ -28,7 +28,6 @@ def draw_picture(width, height):
     sg.fill_rectangle(375, 340,100, 25)
     sg.fill_rectangle(350, 360,100, 25)
     sg.fill_rectangle(325, 380,100, 25)
-    draw_cloud(100, 80)
 
 
 if __name__ == "__main__":
