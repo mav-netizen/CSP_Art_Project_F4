@@ -5,7 +5,13 @@ def draw_cloud(x, y):
     sg.set_fill_color("white")
     sg.fill_rectangle(x-60, y-20, 120, 40)
     sg.fill_rectangle(x-40, y-40, 80, 80)
-    
+    sg.fill_arc(x-80,y-20,40,40,270,-180)
+    sg.fill_arc(x-60,y-40,40,40,180,-90)
+    sg.fill_arc(x-60,y,40,40,180,270)
+    sg.fill_circle(x,y,55)
+    sg.fill_arc(x+40,y-20,40,40,270,180)
+    sg.fill_arc(x+20,y-40,40,40,90,-90)
+    sg.fill_arc(x+20,y,40,40,0,-90)
     
 def draw_picture(width, height):
     """Draws a static picture."""
@@ -28,11 +34,11 @@ def draw_picture(width, height):
     sg.fill_rectangle(375, 340,100, 25)
     sg.fill_rectangle(350, 360,100, 25)
     sg.fill_rectangle(325, 380,100, 25)
-    
+    draw_cloud(120,70)
+    draw_cloud(320,65)
     sg.set_outline_color("black")
     sg.set_fill_color ("pink")
     sg.fill_rectangle(240, 200,160, 80)
-    
     sg.set_outline_color("black")
     sg.set_fill_color("brown")
     sg.fill_triangle (220,200,320,140,420,200)
