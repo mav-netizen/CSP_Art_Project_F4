@@ -17,6 +17,7 @@ def draw_house(x, y, color):
     # 3. House Door
     sg.set_fill_color("brown")
     sg.fill_rectangle(x + 60, y + 20, 40, 60)
+# Created by AI (Gemini)
 
 def draw_bird(x, y, color):
     """
@@ -26,7 +27,7 @@ def draw_bird(x, y, color):
     # The original was one connected line; here we use two separate lines for the V-shape
     sg.draw_line(x - 15, y - 8, x, y)
     sg.draw_line(x, y, x + 15, y - 8)
-    
+    #Created by AI (Gemini)
 #cloud
 def draw_cloud(x, y):
     sg.set_outline_color("white")
